@@ -11,7 +11,7 @@ class TurnLog:
         self.path.parent.mkdir(parents=True, exist_ok=True)
 
     def write(self, obj: dict) -> None:
-        with open(self.path, "a", encoding="utf-8") as f:
+        with open(self.path, "a", encoding="utf-8", newline="\n") as f:
             f.write(json.dumps(obj, ensure_ascii=False) + "\n")
 
 

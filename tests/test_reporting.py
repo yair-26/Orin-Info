@@ -65,6 +65,19 @@ class MockDataInSyncTests(unittest.TestCase):
                 self.assertEqual((Path(d) / name).read_text(encoding="utf-8"),
                                  (OUT / name).read_text(encoding="utf-8"), name)
 
+    def test_committed_mock_data_uses_lf_only(self):
+        # Committed data must be byte-stable across Windows, WSL and CI (see .gitattributes).
+        for path in (OUT / "sample_log.jsonl", OUT / "calls.json", OUT / "summary.json",
+                     OUT / "calls" / "mock0001.json"):
+            self.assertNotIn(b"\r\n", path.read_bytes(), path.name)
+
+    def test_generator_output_uses_lf_only(self):
+        with tempfile.TemporaryDirectory() as d:
+            write_all(Path(d))
+            for path in Path(d).rglob("*"):
+                if path.is_file():
+                    self.assertNotIn(b"\r\n", path.read_bytes(), path.name)
+
 
 if __name__ == "__main__":
     unittest.main()

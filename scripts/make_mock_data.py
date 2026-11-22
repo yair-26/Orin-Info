@@ -67,11 +67,14 @@ def generate_log(n_calls: int = 12, seed: int = 7) -> list[dict]:
 def write_all(out: Path = OUT) -> None:
     lines = generate_log()
     (out / "calls").mkdir(parents=True, exist_ok=True)
+    # newline="\n": byte-stable output on Windows, WSL and CI (LF only, see .gitattributes).
     (out / "sample_log.jsonl").write_text(
-        "".join(json.dumps(x, ensure_ascii=False) + "\n" for x in lines), encoding="utf-8")
+        "".join(json.dumps(x, ensure_ascii=False) + "\n" for x in lines),
+        encoding="utf-8", newline="\n")
 
     def dump(path: Path, obj) -> None:
-        path.write_text(json.dumps(obj, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        path.write_text(json.dumps(obj, ensure_ascii=False, indent=2) + "\n",
+                        encoding="utf-8", newline="\n")
 
     listing = call_list(lines, limit=1000)
     dump(out / "calls.json", listing)
@@ -83,7 +86,7 @@ def write_all(out: Path = OUT) -> None:
         "המחירים והמספרים בדויים ואינם מחירי ספק. מתאימים ל-docs/api-contracts.md גרסה 0.1.\n\n"
         "- `calls.json` = GET /calls\n- `calls/<call_id>.json` = GET /calls/{call_id}\n"
         "- `summary.json` = GET /summary\n- `sample_log.jsonl` = לוג תורות לדוגמה (קלט ל-`scripts.cost_report`)\n",
-        encoding="utf-8")
+        encoding="utf-8", newline="\n")
 
 
 if __name__ == "__main__":
