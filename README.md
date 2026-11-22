@@ -20,4 +20,5 @@ tests/
 
 ## הגדרה מקומית
 cp .env.example .env   # ממלאים מפתחות רק ב-.env
-(שאר ההוראות מתווספות כאן על ידי Claude Code)
+python3 -m unittest discover -s tests -v   # בדיקות (ללא התקנות; test_health מדולג בלי fastapi)
+# עם תלויות: pip install -e .[dev] && uvicorn core.app:app --reload  (לא נבדק)
