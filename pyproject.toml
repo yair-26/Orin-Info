@@ -1,0 +1,8 @@
+[project]
+name = "orin-info"
+version = "0.0.1"
+requires-python = ">=3.11"
+dependencies = ["fastapi", "uvicorn", "pyyaml"]
+
+[project.optional-dependencies]
+dev = ["pytest", "httpx"]
