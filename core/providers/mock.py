@@ -14,7 +14,9 @@ SEARCH_TRIGGERS = ("מחיר", "כמה עולה", "טלפון", "שעות פתי
 
 class MockSTT(STTProvider):
     def transcribe(self, audio: bytes) -> STTResult:
-        return STTResult(text=audio.decode("utf-8"), confidence=1.0, latency_ms=1.0)
+        text = audio.decode("utf-8")
+        # Fake duration (mock world only): ~0.06s per character.
+        return STTResult(text=text, confidence=1.0, latency_ms=1.0, audio_seconds=len(text) * 0.06)
 
 
 class MockTTS(TTSProvider):

@@ -21,6 +21,9 @@ class CallLimits:
         self.tool_calls = 0
         self.search_this_turn = 0
 
+    def elapsed(self) -> float:
+        return self._clock() - self._start
+
     def start_turn(self) -> None:
         self.search_this_turn = 0
         if self._clock() - self._start > self.max_call_seconds:

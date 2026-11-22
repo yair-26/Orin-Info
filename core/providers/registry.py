@@ -17,10 +17,10 @@ REGISTRY: dict[str, dict[str, type]] = {
 }
 
 
-def get_provider(kind: str, config_dir: Path | None = None, **kwargs):
+def get_provider(kind: str, config_dir: Path | None = None, name: str | None = None, **kwargs):
     if kind not in REGISTRY:
         raise ValueError(f"unknown provider kind: {kind}")
-    name = load_providers(config_dir).get(kind)
+    name = name or load_providers(config_dir).get(kind)
     if name is None:
         raise ValueError(f"providers.yaml has no entry for '{kind}'")
     impls = REGISTRY[kind]

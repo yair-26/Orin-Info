@@ -10,6 +10,7 @@ class STTResult:
     text: str
     confidence: float
     latency_ms: float
+    audio_seconds: float | None = None  # needed for per-minute STT pricing
 
 
 @dataclass
