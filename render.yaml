@@ -1,0 +1,13 @@
+# Free staging on Render (D-007). Demo data only, no real user data, no voice calls.
+# Free web services spin down after 15 idle minutes and take ~1 minute to wake (verified 22.11.2026).
+services:
+  - type: web
+    name: orin-info-staging
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn core.app:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.3

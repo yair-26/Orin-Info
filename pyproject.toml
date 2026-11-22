@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "orin-info"
 version = "0.0.1"
@@ -6,3 +10,6 @@ dependencies = ["fastapi", "uvicorn", "pyyaml"]
 
 [project.optional-dependencies]
 dev = ["pytest", "httpx"]
+
+[tool.setuptools.packages.find]
+include = ["core*", "products*", "scripts*"]

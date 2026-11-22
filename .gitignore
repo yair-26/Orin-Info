@@ -8,3 +8,5 @@ data/
 recordings/
 *.wav
 *.mp3
+build/
+*.egg-info/
