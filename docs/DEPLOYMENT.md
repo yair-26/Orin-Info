@@ -40,5 +40,8 @@
 - Neon, תוכנית Free: קבועה ולא ניסיון, בלי כרטיס אשראי; 1 GB אחסון לפרויקט ו-100 שעות CU בחודש; נרדם אחרי 5 דקות; 10 ענפים לפרויקט. מקור: neon.com/faqs/free-plan-limits-and-quotas (עודכן 1.10.2026). דפים ישנים באתר מציגים מספרים אחרים, לכן לבדוק שוב בהרשמה.
 
 ## מצב נוכחי: staging על נתוני דמה, בלי מסד נתונים
-`core/app.py` מגיש /health, /calls, /calls/{id}, /summary מתוך `admin/mock-data/sample_log.jsonl` (פיקטיבי). אין מסד נתונים עד הכרעת D-004, ולכן אין עדיין עדכון נתונים בזמן ריצה: עדכון נתוני הדמה נעשה ב-`python3 -m scripts.make_mock_data` ו-commit. פריסה: Render, New > Blueprint, בחירת ה-Repository (קורא את render.yaml). לא נבדק עם FastAPI אמיתי (ראו STATUS).
+`core/app.py` מגיש /health, /calls, /calls/{id}, /summary מתוך `admin/mock-data/sample_log.jsonl` (פיקטיבי). אין מסד נתונים עד הכרעת D-004, ולכן אין עדיין עדכון נתונים בזמן ריצה: עדכון נתוני הדמה נעשה ב-`python3 -m scripts.make_mock_data` ו-commit. פריסה: Render, New > Blueprint, בחירת ה-Repository (קורא את render.yaml).
+
+נבדק מקומית ב-22.11.2026: השרת עלה ב-uvicorn וכל ארבע הנקודות החזירו תשובה תקינה (curl).
+הרצה על Render טרם בוצעה. הגדרת GitHub המשותף: `docs/GITHUB_SETUP.md`.
 

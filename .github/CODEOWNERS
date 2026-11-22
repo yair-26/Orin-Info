@@ -1,0 +1,23 @@
+# CODEOWNERS – מי נדרש לאשר שינוי בכל תיקייה (GitHub בוחר אוטומטית reviewer ב-PR).
+# TODO(פעם אחת): החליפו את @AVIEL-GITHUB-USERNAME בשם המשתמש של אביאל ב-GitHub.
+
+# ברירת מחדל: שניהם
+*                   @yair-26 @AVIEL-GITHUB-USERNAME
+
+# ליבה ומוצר – אביאל (ראו CLAUDE.md, "הפרדת תחומים")
+/core/              @AVIEL-GITHUB-USERNAME
+/products/          @AVIEL-GITHUB-USERNAME
+/config/            @AVIEL-GITHUB-USERNAME
+/scripts/           @AVIEL-GITHUB-USERNAME
+
+# חוזה ה-API: שינוי דורש אישור של שניהם
+/docs/api-contracts.md  @AVIEL-GITHUB-USERNAME @yair-26
+
+# דשבורד ונתוני דמה – יאיר
+/admin/             @yair-26
+
+# תשתית שיתוף ותיעוד – שניהם
+/docs/              @AVIEL-GITHUB-USERNAME @yair-26
+/tests/             @AVIEL-GITHUB-USERNAME @yair-26
+/.github/           @yair-26
+/CLAUDE.md          @AVIEL-GITHUB-USERNAME @yair-26

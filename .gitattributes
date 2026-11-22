@@ -1,0 +1,9 @@
+# Normalize line endings so Windows, WSL and CI produce identical bytes.
+* text=auto eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.wav binary
+*.mp3 binary

@@ -13,3 +13,7 @@ dev = ["pytest", "httpx"]
 
 [tool.setuptools.packages.find]
 include = ["core*", "products*", "scripts*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

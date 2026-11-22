@@ -35,9 +35,11 @@ ORIN INFO: סוכן קולי בעברית שמופעל דרך טלפון רגי�
 - Pull Request נסקר ומאושר על ידי אדם.
 
 ## פקודות נפוצות
-- בדיקות: `python3 -m unittest discover -s tests -v` (או `pytest` אחרי התקנה)
-- שיחת טקסט בטרמינל: `python3 -m scripts.chat`
-- דוח עלות: `python3 -m scripts.cost_report admin/mock-data/sample_log.jsonl`
-- מבחן שאלות: `python3 -m scripts.eval scripts/sample_questions.csv --out results.csv`
-- יצירת נתוני דמה מחדש: `python3 -m scripts.make_mock_data` (ואז להריץ בדיקות)
-- שרת (לא נבדק): `uvicorn core.app:app --reload`
+- התקנה: `python -m venv .venv` ואז `.venv/Scripts/python -m pip install -e ".[dev]"` (Windows) או `.venv/bin/python -m pip install -e ".[dev]"` (WSL)
+- בדיקות: `.venv/Scripts/python -m pytest -q` (ב-WSL: `.venv/bin/python -m pytest -q`). ה-CI מריץ אותן על Ubuntu ו-Windows, Python 3.11 ו-3.12.
+- שיחת טקסט בטרמינל: `python -m scripts.chat`
+- דוח עלות: `python -m scripts.cost_report admin/mock-data/sample_log.jsonl`
+- מבחן שאלות: `python -m scripts.eval scripts/sample_questions.csv --out results.csv`
+- יצירת נתוני דמה מחדש: `python -m scripts.make_mock_data` (ואז להריץ בדיקות)
+- שרת מקומי: `uvicorn core.app:app --reload` (נבדק 22.11.2026)
+- שיתוף פעולה: `CONTRIBUTING.md` ו-`docs/GITHUB_SETUP.md`. אין לדחוף ישירות ל-main; CI חייב להיות ירוק.
