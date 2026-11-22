@@ -9,7 +9,7 @@ from .base import (
 )
 
 # Words that make the mock LLM ask for a web search (price / phone / opening hours).
-SEARCH_TRIGGERS = ("מחיר", "כמה עולה", "טלפון", "שעות פתיחה")
+SEARCH_TRIGGERS = ("מחיר", "כמה עולה", "טלפון", "פתיחה")
 
 
 class MockSTT(STTProvider):
