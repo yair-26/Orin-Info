@@ -1,0 +1,5 @@
+# תקרות הגנה על כסף. הערכים הם ברירת מחדל זמנית, לאשר ידנית.
+max_call_seconds: 300
+max_tool_calls_per_call: 5
+max_search_calls_per_turn: 2
+daily_spend_cap: null   # להגדיר אחרי בחירת ספקים

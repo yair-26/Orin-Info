@@ -1,0 +1,21 @@
+# מחירי ספקים. לא ממציאים: כל ערך נלקח מאתר הספק ומתועד עם תאריך ומקור.
+# ערך null = עדיין לא נבדק.
+# דוגמת מבנה (לא מחירים אמיתיים):
+# llm:
+#   <provider>/<model>:
+#     input_per_1m_tokens: null
+#     output_per_1m_tokens: null
+#     source_url: null
+#     checked_on: null
+# stt:
+#   <provider>:
+#     per_minute: null
+# tts:
+#   <provider>:
+#     per_1k_chars: null
+# search:
+#   <provider>:
+#     per_call: null
+# telephony:
+#   <provider>:
+#     per_minute: null

@@ -1,0 +1,6 @@
+# בחירת ספק לכל רכיב. mock = ספק דמה, רץ בלי מפתח.
+stt: mock
+tts: mock
+llm: mock
+search: mock
+telephony: mock
