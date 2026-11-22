@@ -1,0 +1,24 @@
+{
+  "calls_count": 12,
+  "total_minutes": 14.093333333333334,
+  "total_cost": 1.0267592810687316,
+  "avg_cost_per_minute": 0.07285425362360914,
+  "median_cost_per_call": 0.08040326450539503,
+  "cost_by_component": {
+    "stt": 0.056068614402064954,
+    "llm": 0.063344,
+    "tts": 0.6646,
+    "search": 0.13,
+    "telephony": 0.11274666666666666
+  },
+  "search_vs_no_search": {
+    "search": {
+      "avg_latency_ms": 3580.153846153846,
+      "avg_cost": 0.015835749693452864
+    },
+    "no_search": {
+      "avg_latency_ms": 1797.5454545454545,
+      "avg_cost": 0.011415525508461146
+    }
+  }
+}

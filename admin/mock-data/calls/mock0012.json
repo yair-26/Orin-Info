@@ -1,0 +1,113 @@
+{
+  "call_id": "mock0012",
+  "started_at": "2026-11-23T13:00:00+00:00",
+  "ended_at": "2026-11-23T13:01:07+00:00",
+  "duration_seconds": 67.0,
+  "status": "completed",
+  "total_cost": 0.10011407633890163,
+  "cost_breakdown": {
+    "stt": 0.006872743005568288,
+    "llm": 0.007108,
+    "tts": 0.0722,
+    "search": 0.005,
+    "telephony": 0.008933333333333333
+  },
+  "turns": [
+    {
+      "turn_id": 1,
+      "latency_ms_by_component": {
+        "stt": 533,
+        "llm": 1362,
+        "tts": 270,
+        "search": 0
+      },
+      "classification": "chat",
+      "had_search": false,
+      "error": null
+    },
+    {
+      "turn_id": 2,
+      "latency_ms_by_component": {
+        "stt": 384,
+        "llm": 1031,
+        "tts": 405,
+        "search": 0
+      },
+      "classification": "chat",
+      "had_search": false,
+      "error": null
+    },
+    {
+      "turn_id": 3,
+      "latency_ms_by_component": {
+        "stt": 366,
+        "llm": 1186,
+        "tts": 408,
+        "search": 0
+      },
+      "classification": "chat",
+      "had_search": false,
+      "error": null
+    },
+    {
+      "turn_id": 4,
+      "latency_ms_by_component": {
+        "stt": 590,
+        "llm": 690,
+        "tts": 265,
+        "search": 0
+      },
+      "classification": "chat",
+      "had_search": false,
+      "error": null
+    },
+    {
+      "turn_id": 5,
+      "latency_ms_by_component": {
+        "stt": 519,
+        "llm": 1494,
+        "tts": 365,
+        "search": 0
+      },
+      "classification": "chat",
+      "had_search": false,
+      "error": null
+    },
+    {
+      "turn_id": 6,
+      "latency_ms_by_component": {
+        "stt": 537,
+        "llm": 1471,
+        "tts": 335,
+        "search": 0
+      },
+      "classification": "chat",
+      "had_search": false,
+      "error": null
+    },
+    {
+      "turn_id": 7,
+      "latency_ms_by_component": {
+        "stt": 454,
+        "llm": 728,
+        "tts": 357,
+        "search": 2420
+      },
+      "classification": "lookup",
+      "had_search": true,
+      "error": null
+    },
+    {
+      "turn_id": 8,
+      "latency_ms_by_component": {
+        "stt": 496,
+        "llm": 808,
+        "tts": 469,
+        "search": 0
+      },
+      "classification": "chat",
+      "had_search": false,
+      "error": null
+    }
+  ]
+}

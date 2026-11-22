@@ -1,0 +1,101 @@
+{
+  "call_id": "mock0008",
+  "started_at": "2026-11-22T09:00:00+00:00",
+  "ended_at": "2026-11-22T09:00:59.400000+00:00",
+  "duration_seconds": 59.4,
+  "status": "completed",
+  "total_cost": 0.09261098833594694,
+  "cost_breakdown": {
+    "stt": 0.006199988335946939,
+    "llm": 0.005491,
+    "tts": 0.063,
+    "search": 0.01,
+    "telephony": 0.00792
+  },
+  "turns": [
+    {
+      "turn_id": 1,
+      "latency_ms_by_component": {
+        "stt": 397,
+        "llm": 921,
+        "tts": 228,
+        "search": 0
+      },
+      "classification": "chat",
+      "had_search": false,
+      "error": null
+    },
+    {
+      "turn_id": 2,
+      "latency_ms_by_component": {
+        "stt": 385,
+        "llm": 1066,
+        "tts": 289,
+        "search": 0
+      },
+      "classification": "chat",
+      "had_search": false,
+      "error": null
+    },
+    {
+      "turn_id": 3,
+      "latency_ms_by_component": {
+        "stt": 287,
+        "llm": 839,
+        "tts": 212,
+        "search": 0
+      },
+      "classification": "chat",
+      "had_search": false,
+      "error": null
+    },
+    {
+      "turn_id": 4,
+      "latency_ms_by_component": {
+        "stt": 487,
+        "llm": 1451,
+        "tts": 322,
+        "search": 0
+      },
+      "classification": "chat",
+      "had_search": false,
+      "error": null
+    },
+    {
+      "turn_id": 5,
+      "latency_ms_by_component": {
+        "stt": 348,
+        "llm": 1320,
+        "tts": 255,
+        "search": 2322
+      },
+      "classification": "lookup",
+      "had_search": true,
+      "error": null
+    },
+    {
+      "turn_id": 6,
+      "latency_ms_by_component": {
+        "stt": 463,
+        "llm": 800,
+        "tts": 279,
+        "search": 1007
+      },
+      "classification": "lookup",
+      "had_search": true,
+      "error": null
+    },
+    {
+      "turn_id": 7,
+      "latency_ms_by_component": {
+        "stt": 468,
+        "llm": 639,
+        "tts": 413,
+        "search": 0
+      },
+      "classification": "chat",
+      "had_search": false,
+      "error": null
+    }
+  ]
+}

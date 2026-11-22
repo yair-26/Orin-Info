@@ -1,0 +1,98 @@
+[
+  {
+    "call_id": "mock0001",
+    "started_at": "2026-11-20T08:00:00+00:00",
+    "duration_seconds": 49.9,
+    "status": "completed",
+    "total_cost": 0.06969782451755845,
+    "turns_count": 5
+  },
+  {
+    "call_id": "mock0002",
+    "started_at": "2026-11-20T15:00:00+00:00",
+    "duration_seconds": 48.0,
+    "status": "completed",
+    "total_cost": 0.08894609037091523,
+    "turns_count": 5
+  },
+  {
+    "call_id": "mock0003",
+    "started_at": "2026-11-20T22:00:00+00:00",
+    "duration_seconds": 38.5,
+    "status": "completed",
+    "total_cost": 0.06926035701197576,
+    "turns_count": 5
+  },
+  {
+    "call_id": "mock0004",
+    "started_at": "2026-11-21T05:00:00+00:00",
+    "duration_seconds": 68.3,
+    "status": "completed",
+    "total_cost": 0.11625384888092843,
+    "turns_count": 8
+  },
+  {
+    "call_id": "mock0005",
+    "started_at": "2026-11-21T12:00:00+00:00",
+    "duration_seconds": 24.0,
+    "status": "completed",
+    "total_cost": 0.0356345775860357,
+    "turns_count": 3
+  },
+  {
+    "call_id": "mock0006",
+    "started_at": "2026-11-21T19:00:00+00:00",
+    "duration_seconds": 301.0,
+    "status": "limit_exceeded:call_seconds",
+    "total_cost": 0.14072667476894535,
+    "turns_count": 8
+  },
+  {
+    "call_id": "mock0007",
+    "started_at": "2026-11-22T02:00:00+00:00",
+    "duration_seconds": 61.5,
+    "status": "completed",
+    "total_cost": 0.1071242174890655,
+    "turns_count": 7
+  },
+  {
+    "call_id": "mock0008",
+    "started_at": "2026-11-22T09:00:00+00:00",
+    "duration_seconds": 59.4,
+    "status": "completed",
+    "total_cost": 0.09261098833594694,
+    "turns_count": 7
+  },
+  {
+    "call_id": "mock0009",
+    "started_at": "2026-11-22T16:00:00+00:00",
+    "duration_seconds": 44.2,
+    "status": "completed",
+    "total_cost": 0.0714069361782728,
+    "turns_count": 5
+  },
+  {
+    "call_id": "mock0010",
+    "started_at": "2026-11-22T23:00:00+00:00",
+    "duration_seconds": 46.9,
+    "status": "completed",
+    "total_cost": 0.07186043863987483,
+    "turns_count": 5
+  },
+  {
+    "call_id": "mock0011",
+    "started_at": "2026-11-23T06:00:00+00:00",
+    "duration_seconds": 36.9,
+    "status": "completed",
+    "total_cost": 0.06312325095031099,
+    "turns_count": 4
+  },
+  {
+    "call_id": "mock0012",
+    "started_at": "2026-11-23T13:00:00+00:00",
+    "duration_seconds": 67.0,
+    "status": "completed",
+    "total_cost": 0.10011407633890163,
+    "turns_count": 8
+  }
+]
