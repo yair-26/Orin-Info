@@ -35,4 +35,9 @@ ORIN INFO: סוכן קולי בעברית שמופעל דרך טלפון רגי�
 - Pull Request נסקר ומאושר על ידי אדם.
 
 ## פקודות נפוצות
-(Claude Code ממלא ומעדכן כאן כשהפרויקט מתקדם: הרצת שרת, בדיקות, דוח עלות)
+- בדיקות: `python3 -m unittest discover -s tests -v` (או `pytest` אחרי התקנה)
+- שיחת טקסט בטרמינל: `python3 -m scripts.chat`
+- דוח עלות: `python3 -m scripts.cost_report admin/mock-data/sample_log.jsonl`
+- מבחן שאלות: `python3 -m scripts.eval scripts/sample_questions.csv --out results.csv`
+- יצירת נתוני דמה מחדש: `python3 -m scripts.make_mock_data` (ואז להריץ בדיקות)
+- שרת (לא נבדק): `uvicorn core.app:app --reload`
